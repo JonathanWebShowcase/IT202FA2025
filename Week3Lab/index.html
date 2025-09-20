@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>It's My Birthday!</h1>
+    <h2>On the 12th May</h2>
+    <br>
+    <img src="img/BirthdayCake.png" alt="Image Of A Birthday Cake">
+    <br>
+    <h3>What to Bring</h3>
+    <ul>
+        <li>Baloons (I love baloons)</li>
+        <li>Cake (I'm really good at eating)</li>
+        <li>An appetite (There will be lots of food)</li>
+    </ul>
+    <h3>This is where you need to go:</h3>
+    <a href="https://maps.app.goo.gl/1uZRztTf1GFYJLxG9">Google map link</a>
+
+
+<!--
+    So to make a table we need the table element
+    to create the illusion of having two tables next to each other we need to make each horizontal contain 4 cells 
+
+    Table
+    row (skill / stars) SPACE (skills / stars) row
+    row (skill / stars) SPACE (skills / stars) row
+    row (skill / stars) SPACE (skills / stars) row
+    row (skill / stars) SPACE (skills / stars) row
+    Table
+
+    to make the stars you need to use html UTF symbols 
+    source: https://www.w3schools.com/charsets/ref_utf_symbols.asp
+    Black Star 
+    &#9733;
+    Empty Star
+    &#9734;
+
+    Notes:
+    - Added a border to make container and spacing more apperant
+    - Cellpadding to add padding INSIDE the cell like around the text
+    - Cellspacing which adds space between the cells 
+    - Width on the individual cells which makes them all the same width regardless of whats in there.
+    But you only need to add it to the top widths since the ones underneath will be the size of the biggest ones at top
+-->
+    <br>
+    <h1>SKILLS</h1>
+        <table border="1" cellspacing="15" cellpadding="10">
+            <tr>
+                <td width="250">BootStrap Framework</td>
+                <td width="100">&#9733; &#9733; &#9733; &#9733;</td>
+                <!--This is the space between the rows that creates the illusion of two tables-->
+                <td width="250">MVC Pattern</td>
+                <td width="100">&#9733; &#9733; &#9734; &#9734;</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>&#9733; &#9733; &#9733; &#9733;</td>
+                <td>Method Factory Pattern</td>
+                <td>&#9733; &#9733; &#9733; &#9734;</td>
+            </tr>
+            <tr>
+                <td>HTML</td>
+                <td>&#9733; &#9733; &#9733; &#9733;</td>
+                <td>Object Oriented Programing</td>
+                <td>&#9733; &#9733; &#9734; &#9734;</td>
+            </tr>
+            <tr>
+                <td>JSON</td>
+                <td>&#9733; &#9733; &#9733; &#9733;</td>
+                <td>SASS/SCSS</td>
+                <td>&#9733; &#9733; &#9733; &#9734;</td>
+            </tr>
+            <tr>
+                <td>MySQL</td>
+                <td>&#9733; &#9733; &#9734; &#9734;</td>
+                <td>SEO</td>
+                <td>&#9733; &#9733; &#9733; &#9733;</td>
+            </tr>
+        </table>
+    
+</body>
+</html>
