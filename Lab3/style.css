@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.containers{
+    width: 200px;
+    height: 200px;
+}
+#box1{
+    background-color: rgb(255, 255, 184);
+    padding:20px;
+    border:10px solid black;
+}
+#box2{
+    background-color: rgb(195, 255, 251);
+    border-top: 20px solid black;
+    border-left: 10px solid black;
+    border-right: 10px solid black;
+
+    /*
+    - So I added up
+        width of top box - 200
+        border left and right - 20
+        padding for left and right - 40
+
+        All of this is related to the top box
+    */
+    margin-left:260px;
+}
+#box3{
+    background-color: rgb(255, 191, 185);
+    border:10px solid black;
+
+    /*
+    margin of top box - 260
+    width of middle box - 200
+    border of middle box left and right -20
+    */
+    margin-left: 480px
+}
+
+#box1 p{
+    margin: 0;
+}
+
+/*
+So the goal is to make the boxes touch corners and to do that we need to 
+add up the width plus the borders plus padding and use that as the margin
+*/
