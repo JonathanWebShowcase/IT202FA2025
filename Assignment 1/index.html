@@ -4,16 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=SUSE+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+    </style>
     <title>My Resume</title>
 </head>
 <body>
+
     <div id="navbar">
         <ul id="linksContainer">
-            <li>About Me</li>
-            <li>Education</li>
-            <li>Experience</li>
-            <li>Skills</li>
-            <li>Contact Me</li>
+            <li><a href="#intro">About Me</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#footer">Footer</a></li>
         </ul>
     </div>
 
@@ -21,13 +25,20 @@
 
     <div id="intro">
         <div id="imgContainerIntro">
-            <img src="" alt="Picture Of Jonathan Rodriguez">
+            <img src="img/myPicture.png" alt="Picture Of Jonathan Rodriguez">
         </div>
         <div id="textContainerIntro">
             <h1>Junior Web Developer</h1>
-            <p>Lifelong passion for building and creating, Aiming to build a better tommorow
-                one website at a time.
-            </p>
+            <div id="bottomIntroText">
+                <p>Lifelong passion for building and creating, Aiming to build a better tommorow
+                    one website at a time.
+                </p>
+                <br>
+                <p>A foundation in LAMP stack development and a passion for learning next gen web development.</p>
+                <div id="gitLogoCont">
+                    <a href="https://github.com/JonathanWebShowcase"><img src="img/githubLogo.png" alt="" id="githubLogo"></a>
+                </div>
+            </div>
         </div>
 
     </div>
@@ -35,26 +46,67 @@
 
     
     <div id="education">
-
+        <table id="educationTable" cellspacing="15" cellpadding="10">
+            <tr>
+                <td class="tableDataLeft"><h4>Highschool Diploma</h4></td>
+                <!--This is the space between the rows that creates the illusion of two tables-->
+                <td class="tableDataRight">2018 - 2022 <br><br> Completed Highschool at Clifton Highschool in the state of New Jersey </td>
+            </tr>
+            <tr>
+                <td class="tableDataLeft"><h4>Associates of Applied Science</h4> <br> CIS Web and Mobile App Development</td>
+                <!--This is the space between the rows that creates the illusion of two tables-->
+                <td class="tableDataRight">2022 - 2024 <br><br> Completed Associates in Passaic County Community College, learning skills in applied web development utilizing the LAMP stack</td>
+            </tr>
+        </table>
     </div>
 
 
 
     <div id="experience">
-
+        <table id="experienceTable" cellspacing="15" cellpadding="10">
+            <tr>
+                <td class="tableDataLeft"><h4>Web Master Intern</h4> <br> Passaic County Community College</td>
+                <!--This is the space between the rows that creates the illusion of two tables-->
+                <td class="tableDataRight">Designed and Implemented a web site for honoring veteran information using Omeka CMS</td>
+            </tr>
+            <tr>
+                <td class="tableDataLeft"><h4>Web Design Intern</h4> <br> Tag Online</td>
+                <!--This is the space between the rows that creates the illusion of two tables-->
+                <td class="tableDataRight">Designed and edited web designs for clients based on requests and feedback using WordPress CMS</td>
+            </tr>
+        </table>
     </div>
 
 
 
     <div id="skills">
+        <div class="skillShelf">
+            <div class="skillItem" id="skill1">CSS</div>
+            <div class="skillItem" id="skill2">HTML</div>
+            <div class="skillItem" id="skill3">JS</div>
+        </div>
+        <div class="skillShelf">
+            <div class="skillItem" id="skill4">PHP</div>
+            <div class="skillItem" id="skill5">MySQL</div>
+            <div class="skillItem" id="skill6">Linux</div>
+        </div>
+        <div class="skillShelf">
+            <div class="skillItem" id="skill7">WordPress</div>
+            <div class="skillItem" id="skill8">Omeka</div>
+            <div class="skillItem" id="skill9">Figma</div>
+        </div>
 
     </div>
 
 
 
     <div id="footer">
-
-
+        <div id="footerLeftFlex">
+            <p>footer left stuff here</p>
+        </div>
+        <div id="footerRightFlex">
+            <p>Footer right stuff here</p>
+        </div>
     </div>
 
 
