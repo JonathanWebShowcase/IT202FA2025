@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Assignment 2</title>
+</head>
+<body>
+    <div id="tabsContainer">
+        <div id="stringReverse" class="tabs">String Reverse</div>
+        <div id="palindrome" class="tabs">Palindrome</div>
+        <div id="tips" class="tabs">Tip Calculator</div>
+    </div>
+
+    <div id="bigBoy">
+        <div id="project1" class="projectON">
+            <h1 class="projectNames">String Reverse</h1>
+            <div class="mainContainers">
+                <input type="text" placeholder="Input String Here" id="stringInput">
+                <div id="reverseButton">Push To Reverse String</div>
+                <p id="reverseStringOutput">Output Here</p>
+            </div>
+        </div>
+
+        <div id="project2" class="projectOFF">
+            <h1 class="projectNames">Palindrome</h1>
+            <div class="mainContainers">
+                <input type="text" placeholder="Input Number Here" id="palindromeInput">
+                <div id="palindromeButton">Check If Palindrome</div>
+                <p id="palindromeOutput">Output Here</p>
+            </div>
+        </div>
+
+        <div id="project3" class="projectOFF">
+            <h1 class="projectNames">Tip Calculator</h1>
+            <div class="mainContainers">
+                <input type="text" placeholder="Input Subtotal Here" id="calcSUBInput">
+                <input type="text" placeholder="Input Tip Here" id="calcTIPInput">
+                <div id="calculatorButton">Calculate Check</div>
+                <p id="calculatorOutput1">Output One</p>
+                <p id="calculatorOutput2">Output Two</p>
+                <p id="calculatorOutput3">Output Three</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="JS/buttons.js"></script>
+    <script src="JS/reverseString.js"></script>
+    <script src="JS/palindrome.js"></script>
+    <script src="JS/calculator.js"></script>
+</body>
+</html>

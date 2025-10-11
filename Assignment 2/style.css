@@ -1,0 +1,62 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+#tabsContainer{
+    display: flex;
+    width:100vw;
+    border: 1px solid black;
+    justify-content: center;
+}
+.tabs{
+    padding:2%;
+    background-color: aquamarine;
+    margin:1%;
+}
+.tabs:hover{
+    background-color: rgb(77, 109, 109);
+}
+
+#bigBoy{background-color: aquamarine;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    border:1px solid black;
+    background-color: rgb(127, 144, 255);
+    margin-top:3%;
+    height:60vh;
+    width:60vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#project1{
+
+}
+#reverseButton{
+    background-color: bisque;
+}
+#reverseButton:hover{
+    background-color: rgb(99, 78, 53);
+}
+#reverseStringOutput{
+    background-color: rgb(248, 255, 207);
+}
+
+#palindromeButton{
+    background-color: bisque;
+}
+#palindromeButton:hover{
+    background-color: rgb(169, 134, 92);
+}
+#palindromeOutput{
+    background-color: rgb(255, 243, 228);
+}
+
+
+
+.projectON{display: block;}
+
+.projectOFF{display: none;}
