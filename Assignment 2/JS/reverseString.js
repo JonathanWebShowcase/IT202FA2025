@@ -4,16 +4,19 @@ let output = document.getElementById("reverseStringOutput");
 function stringReverser(){
     let original = document.getElementById("stringInput").value;
     console.log(original);
-    let reversed = original.split('').reverse().join('');
-    /*
-    EXPLINATION
-    - original holds string
-    - split will split the string into char
-    - reverse will reverse the order
-    - join will join them into one string again
-    */
+    let reversed = "";
+
+    let size = original.length - 1;
+    console.log(size);
+
+    for(let i = size; i > -1; i--){
+        reversed += original[i];
+        console.log(original[i]);
+        console.log("inside Loop + " + i);
+    }
 
     output.textContent = reversed;
+    console.log(reversed);
 }
 
 activatorButtonSTR.addEventListener("click", stringReverser);
