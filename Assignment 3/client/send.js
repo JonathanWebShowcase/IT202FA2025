@@ -49,7 +49,7 @@ async function sendBMItoServer(){
     //same here
     let BMIresults = await response.json();
 
-    bmiOutput.textContent = BMIresults.bmi.toFixed(2);
+    bmiOutput.textContent = "BMI : " + BMIresults.bmi.toFixed(2);
 
     } catch(error){
         console.log ("The Berlin Wall Has Fallen" + error);
@@ -77,8 +77,8 @@ async function sendTXTToServer(){
         let response = await fetch(TXTurl , httpHeaderTXT);
         let TXTresults = await response.json();
 
-        vowelsOutput.textContent = TXTresults.vowels;
-        consonantsOutput.textContent = TXTresults.consonants;
+        vowelsOutput.textContent = "Vowels : " + TXTresults.vowels;
+        consonantsOutput.textContent = "Consonants + : " + TXTresults.consonants;
 
     } catch(error){
 
