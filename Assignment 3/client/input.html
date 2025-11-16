@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Upload TXT file</h1>
+    <!-- you need to have name here as this is the key for the key value pair being sent to the server-->
+    <input type="file" id="txtFileUpload" name="file"> <br><br>
+
+    <button id="sendTXTButton">Send TXT to Server</button>
+
+    <h1>Upload Measurments</h1>
+    <input type="text" placeholder="lbs" id="weightInput"><br>
+    <input type="text" placeholder="feet" id="feetInput"><br>
+    <input type="text" placeholder="inches" id="inchesInput"><br><br>
+
+    <button id="sendBMIButton">Send BMI to Server</button>
+
+    <h1>Output</h1>
+    <h2>TXT Return</h2>
+    <p id="vowels">Vowels:</p>
+    <p id="consonants">Consonants:</p>
+    <h2>BMI Return</h2>
+    <p id="bmi">BMI:</p>
+
+    <script src="send.js"></script>
+</body>
+</html>
